@@ -184,9 +184,9 @@
         "category": "Lakes",
         "city": "Moscow",
         "state": "Moscow",
-        "id": 102,
+        "id": 1013,
         "isFeatured": true,
-        "isFavorite": false,
+        "isFavorite": true,
         "park": "Park for peoples",
         "coordinates": {
             "longitude": 37.676454,
