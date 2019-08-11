@@ -17,6 +17,10 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var category: Category
     var isFavorite: Bool
+    
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
+    }
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -32,11 +36,11 @@ struct Landmark: Hashable, Codable, Identifiable {
     }
 }
 
-extension Landmark {
-    var image: Image {
-        ImageStore.shared.image(name: imageName)
-    }
-}
+//extension Landmark {
+//    var image: Image {
+//        ImageStore.shared.image(name: imageName)
+//    }
+//}
 
 struct Coordinates: Hashable, Codable {
     var latitude: Double
