@@ -31,7 +31,7 @@ struct ContentView: View {
                     Text(landmark.name)
                         .font(.title)
                     Button(action: {
-                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
                     }) {
                         if self.userData.landmarks[self.landmarkIndex].isFavorite {
                             Image(systemName: "star.fill")
@@ -42,7 +42,6 @@ struct ContentView: View {
                         }
                     }
                     .shadow(color: .blue, radius: 10)
-
                 }
                 HStack {
                     Text(landmark.park)
